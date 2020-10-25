@@ -1,0 +1,121 @@
+.schedule{
+    background-color: white;
+    border: 1px #aaa solid;
+    height: auto;
+    min-height: 0 !important;
+}
+
+
+/* ANCHOR week day select */
+.days_links{
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-template-columns: repeat(6, auto);
+    height: var(--big-component-height);
+    width: 100%;
+}
+.days_links label{
+    align-items:center;
+    border: 1px gray solid;
+    display: flex;
+    justify-content: center;
+}
+.day_radio{
+    display: none;
+}
+.day_radio + p{
+    margin: 0;
+    pointer-events: none;
+}
+.day_radio:checked + p{
+    text-decoration: underline;
+}
+
+
+/* ANCHOR week selector */
+#week_select_checkbox{
+    display: none;
+}
+#week_select_label{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#week_select_label *{
+    margin: 5px;
+}
+#week_select_label p{
+    margin-right: 0;
+}
+#week_select_label .down{
+    transform: translateY(-2px);
+}
+
+
+/* ANCHOR day info */
+#day_display{
+    margin-left: 30px;
+}
+
+
+/* ANCHOR schedule table */
+#schedule_table{   
+    display: grid;
+    grid-auto-rows: 70px;
+    grid-template-columns: 70px auto;
+    height: auto;
+}
+.time_column {
+    border: 1px grey solid;
+    border-style: solid solid none none;
+    grid-column: 1;
+    text-align: center;
+}
+.time_column h4{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0 3px;
+    transform: translateY(-50%);
+    width: min-content;
+}
+.schedule_divider{
+    border-bottom: 1px grey solid;
+    grid-column: 2;
+}
+.empty_schedule{
+    font-family: 'Raleway', sans-serif;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+
+/* ANCHOR schedule item */
+.schedule_item{
+    background-color: var(--darkest-background);
+    column-gap: 20px;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-column: 2;
+    justify-content: center;
+    overflow-y: auto;
+    position: relative;
+}
+.schedule_item h3{
+    align-self: flex-end;
+    display: flex;
+    grid-column: 1 / span 3;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+.schedule_item p{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1px;
+}
+.small_schedule_item *{
+    grid-row: 1;
+    margin: auto !important;
+}

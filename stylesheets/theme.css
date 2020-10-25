@@ -1,0 +1,61 @@
+:root {
+	--nav-height: 50px;
+	--small-dropdown-height: 200px;
+	--main-links-transform-down: 30%;
+	--small-screen-links-horizontal-gap: 20px;
+	--big-component-height: 42px;
+
+	--background1: #fff;
+	--dark-background: #fdfdfd;
+	--darkest-background: #abc6e5;
+	--shadow-color:  #9b9b9b;
+
+	--big-text-color: #656568;
+	--medium-text-color: #4b4b4d;
+}
+
+
+body{
+	background-image: url(../img/dotts.svg);
+	background-repeat: repeat;
+	background-size: 25px;
+	background-attachment: fixed;
+
+	margin: 0;
+	width: 100%;
+}
+
+section {
+	column-gap: 40px;
+	display: grid;
+	row-gap: 25px;
+	width: 100%;
+}
+
+section > div{
+    box-shadow: 0px 3px 4px var(--shadow-color);
+}
+
+
+/* ANCHOR Element types */
+h1, h2, h3{
+	/*color: var(--big-text-color);*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+p {
+	color: var(--medium-text-color)
+}
+
+
+/* ANCHOR general classes */
+.arrow {
+	border: solid var(--medium-text-color);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+
+.down {
+	rotate: 45deg;
+}

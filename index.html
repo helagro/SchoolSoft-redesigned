@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schoolsofts startsida fast snyggare">
+
+    <!--Separated to keep it somewhat managable-->
+    <link rel="stylesheet" href="stylesheets/theme.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/nav.css">
+    <link rel="stylesheet" href="stylesheets/schedule.css">
+    <link rel="stylesheet" href="stylesheets/flow.css">
+    <title>SchoolSoft</title>
+    <link rel="icon" type="image/png" href="/img/logo.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="hidden_menu_checkbox" onclick="onNavCheckboxClicked()" >
+
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Icon" class="icon"/></a>
+        </div>
+
+        <label for="hidden_menu_checkbox" class="links">
+            <a href="index.html" ontouchstart="return onNavTouch(event)" id="start">Överblick</a>
+            <a href="placeholder.html" ontouchstart="return onNavTouch(event)"  id="time_planning">Tidsplanering</a>
+            <a href="#" ontouchstart="return onNavTouch(event)"  id="courses">Kurser</a>
+            <a href="#" ontouchstart="return onNavTouch(event)"  id="education">Undervisning</a>
+            <a href="#" ontouchstart="return onNavTouch(event)"  id="attendance">Närvaro</a>
+            <a href="#" ontouchstart="return onNavTouch(event)"  id="other">Övrigt</a>
+
+            <div class="dropdown" id="start_more">
+                <a>Uppgifter och resultat</a>
+                <a>Flöde</a>
+                <a>Schema</a>
+                <a>Kalender</a>
+            </div>
+            <div class="dropdown" id="time_planning_more">
+                <a>Kalender</a>
+                <a>Bokningar</a>
+                <a>Scheman</a>
+                <a>Provschema</a>
+            </div>
+            <div class="dropdown" id="courses_more">
+                <a>EngEng07</a>
+                <a>FysFys02</a>
+                <a>GräGrä0</a>
+                <a>GYARTE</a>
+                <a>aliquet erat</a>
+                <a>MatMat04</a>
+                <a>RelRel01</a>
+                <a>SveSve03</a>
+                <a>TekTek01</a>
+                <a>WebWeb02</a>
+            </div>
+            <div class="dropdown" id="education_more">
+                <a>Planneringar & uppgifter</a>
+                <a>Uppgifter och resultat</a>
+                <a>Min portfolio</a>
+                <a>Forum</a>
+            </div>
+            <div class="dropdown" id="attendance_more">
+                <a>Rapport</a>
+                <a>Anmäl</a>
+            </div>
+            <div class="dropdown" id="other_more">
+                <a>Konto</a>
+                <a>Logga ut</a>
+            </div>
+        </label> 
+
+        <div class="spacing_nav_div"></div> 
+
+        <label for=hidden_menu_checkbox class="menu_dropdown_button">
+            <img src="img/open-menu.svg" alt="open menu"/>
+        </label>
+    </nav>
+
+    <div id="dimmer" onclick="onDimmerClicked()"></div>
+
+    <section>
+       <div class="schedule">
+            <div class="days_links" id="day_btn_holder">
+                <label><input type="radio" name="day" class="day_radio"><p>Mån</p></label>
+                <label><input type="radio" name="day" class="day_radio"><p>Tis</p></label>
+                <label><input type="radio" name="day" class="day_radio"><p>Ons</p></label>
+                <label><input type="radio" name="day" class="day_radio"><p>Tor</p></label>
+                <label><input type="radio" name="day" class="day_radio"><p>Fre</p></label>
+                <input type="checkbox" id="week_select_checkbox" onclick="alert('I couln\'t be bothered to implement this')" >
+                <label for="week_select_checkbox" id="week_select_label"><p>Week 87</p><i class="arrow down"></i></label>
+            </div>
+            <div class="day_info">
+                <h2 id="day_display"></h2>
+            </div>
+            <div id="schedule_table">
+            </div>
+            
+       </div>
+       <div class="flow">
+            <h1>Flöde</h1>
+            <div class="flow-box">
+                <div class="flow-item">
+                    <h3>Vårfest</h3>
+                    <p>
+                        </p>
+                    <a href="">En länk</a>
+                </div>
+                <div class="flow-item">
+                    <h3>Schema!</h3>
+                    <p>
+
+
+                        
+
+                        
+</p>
+                </div>
+                <div class="flow-item">
+                    <h3>Ang kort på nordic wellness</h3>
+                    <p>T
+
+                        
+
+                        
+</p>
+                </div>
+                <div class="flow-item">
+                    <h3>Schema!</h3>
+                    <p>
+
+
+                        
+
+                        
+</p>
+                </div>
+                <div class="flow-item">
+                    <h3>Vårfest</h3>
+                    <p>
+                        </p>
+                    <a href="">En länk</a>
+                </div>
+                <div class="flow-item">
+                    <h3>Schema!</h3>
+                    <p>
+
+
+                        
+
+                        
+</p>
+                </div>
+                <div class="flow-item">
+                    <h3>Ang kort på nordic wellness</h3>
+                    <p>T
+
+                        
+
+                        
+</p>
+                </div>
+                <div class="flow-item">
+                    <h3>Schema!</h3>
+                    <p>
+
+
+                        
+
+                        
+</p>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <script src="scripts/script.js" async defer></script>
+    <script src="scripts/schedule.js" async defer></script>
+    <script src="scripts/nav.js" async defer></script>
+</body>
+</html>

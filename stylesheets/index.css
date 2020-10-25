@@ -1,0 +1,30 @@
+section{
+    box-sizing: border-box;
+    display: grid;
+    margin: 60px auto 0 auto;
+    max-width: 930px;
+}
+
+
+@media(min-width: 1200px){
+    section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 85vh;
+        margin-top: 70px !important;
+        max-width: 2500px;
+        padding: 0 30px;
+    }
+
+    section > div{
+        box-shadow: 3px 3px 4px var(--shadow-color);
+    }
+
+    .flow{
+        height: 100% !important;
+    }
+
+    .schedule{
+        margin-bottom: auto;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,46 @@
+.flow{
+    background-color: var(--background1);
+    border: var(--big-text-color) 1.5px solid;
+    display: grid;
+    grid-template-rows: var(--big-component-height) auto;
+    height: 700px;
+    max-height: 85%;
+    text-align: center;
+}
+
+.flow h1{
+    align-items: center;
+    box-shadow: 0 4px 2px -2px var(--shadow-color);
+    box-sizing: border-box;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.flow-box{
+    display: grid;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.flow-item{
+    border-bottom: var(--medium-text-color) 1px solid;
+    box-sizing: border-box;
+    color: #122742;
+    height: auto;
+    padding: 20px;
+    width: 100%;  
+}
+
+.flow-item p{
+    letter-spacing: 0.4px;
+}
+
+.flow-item:nth-child(odd) {
+    background-color: #f7fafd;   
+}

@@ -1,0 +1,221 @@
+nav {
+	background-color: var(--background1);
+	box-shadow: 0 4px 2px var(--shadow-color);
+	display: grid;
+	font-family: 'Raleway', sans-serif;
+	grid-template-columns: 70px 70px;
+	height: var(--nav-height);
+	justify-content: space-between;
+	overflow: initial; /*Needed for safari*/
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 6;
+}
+
+
+/*ANCHOR logo*/
+.logo, .menu_dropdown_button{
+	align-items: center;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	margin: 0 20px;
+}
+.icon, .menu_dropdown_button > img{
+	height: 30px;
+	object-fit: contain;
+	width: 30px;
+}
+.icon{
+	display: flex;
+}
+
+/*ANCHOR links*/
+.links {
+	align-items: center;
+	background-color: var(--background1);
+	box-shadow: 0 3px 2px #656568;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: auto auto;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: var(--nav-height);
+	transition: height 0.3s;
+	width: 100%;
+	z-index: 3;
+}
+.links > a {
+	color: var(--big-text-color);
+	font-size: larger;
+	font-weight: 200;
+	padding-right: var(--small-screen-links-horizontal-gap);
+	text-align: right;
+	text-decoration: none;
+}
+.links a:hover{
+	color: #888;
+	text-decoration: underline #fff;
+}
+
+
+/*ANCHOR dropdowns*/
+.dropdown{
+	background-color: var(--dark-background);
+	border: 1px solid var(--medium-text-color);
+	box-sizing: border-box;
+	column-gap: 9px;
+	display: none;
+	grid-auto-flow: row;
+	grid-row: 1 / span 6;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: repeat(auto-fill, 32px);
+	height: 100%;
+	overflow: auto;
+	padding: 20px;
+	row-gap: 15px;
+	width: 100%;
+}
+.dropdown > a {
+	color: var(--medium-text-color);
+	font-size: medium;
+}
+.dropdown_main_link{
+	grid-column: 1 / -1;
+	text-align: center;
+}
+.dropdown:hover{
+	display: grid !important;
+}
+#start:hover ~ #start_more, #time_planning:hover ~ #time_planning_more , #courses:hover ~ #courses_more, #education:hover ~ #education_more, #attendance:hover ~ #attendance_more, #other:hover ~ #other_more{
+	display: grid !important;
+}
+#time_planning{grid-row: 2;}
+#courses{grid-row: 3;}
+#education{grid-row: 4;}
+#attendance{grid-row: 5;}
+#other{grid-row: 6;}
+
+
+
+.spacing_nav_div {
+	display: none;
+	grid-row: 1;
+	z-index: 0;
+}
+
+
+/*ANCHOR menu toggles*/
+#hidden_menu_checkbox{
+	display: none;
+	float: right;
+}
+#hidden_menu_checkbox:checked ~ .links{
+	height: var(--small-dropdown-height);
+}
+
+
+.current-link {
+	color: #888 !important;
+}
+
+
+#dimmer {
+	background: #000;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+@media only screen and (min-height: 900px) {
+	nav {
+		position: fixed;
+	}
+	.small_screen_menu {
+		position: fixed;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.links {
+		grid-template-columns: 50% 50%;
+	}
+	.dropdown{
+		grid-auto-flow: unset;
+		grid-template-columns: auto;
+		grid-template-rows: none;
+		height: 100%;
+		overflow: scroll;
+		padding: 4px;
+		row-gap: 3px;
+	}
+}
+@media only screen and (min-width: 840px) {
+	:root{
+		--main-links-transform-down: 0;
+		--small-screen-links-horizontal-gap: 0px;
+	}
+
+	nav {
+		grid-template-columns: 750px auto 75px;
+	}
+
+	.links{
+		box-shadow: none;
+		column-gap: 20px;
+		grid-row: 1;
+		grid-template-columns: repeat(5, auto);
+		height: var(--nav-height) !important;
+		overflow: visible;
+		position: relative;
+		top: 0;
+	}
+	.links > a{
+		align-items: center;
+		display: flex;
+		grid-row: 1 !important;
+		height: var(--nav-height);
+	}
+	#start {
+		margin-left:20px;
+	}
+
+	.dropdown{
+		grid-auto-flow: row;
+		grid-template-rows: repeat(auto-fill, auto);
+		height: auto;
+		max-width: 400px;
+		position: absolute;
+		row-gap: 25px;
+		top: var(--nav-height);
+		width: unset;
+	}
+
+	/* This do be kinda ugly */
+	#start_more{grid-column: 1;}
+	#time_planning_more{grid-column: 2;}
+	#courses_more{grid-column: 3;}
+	#education_more{grid-column: 4;}
+    #attendance_more{grid-column: 5;}
+	#other_more{grid-column: 6;}
+
+	
+	.spacing_nav_div {
+		display: block;
+	}
+
+	.logo{
+		grid-column: 3;
+	}
+
+	.menu_dropdown_button {
+		display: none;
+	}
+}

@@ -1,0 +1,39 @@
+//TODO
+    kunskapskrav
+    rem unneccecary css: https://www.keycdn.com/blog/remove-unused-css
+    Uncaught ReferenceError: styleCurrentLink is not defined - sometimes
+
+
+navigation
+    hover baserad meny
+        hem
+        tidsplanering
+            aktuellt - meddelanden, nuheter
+            shcema
+        kurser
+        undervisning
+        närvaro
+        mer
+            filer och länkar
+            classroom integration
+        user
+            logga ut
+    länkar i element
+
+start
+    schema 
+    flöde
+
+
+        
+
+mobilanpassning
+
+styling
+    clean - not many pictures - school network it not very good
+    ta upp hela skärmen elr centrerat
+    inte gammal användning av gradient 
+    använd free space
+    skolinfo as footer
+    liknande tema för familiarity
+    samma färger: ish
