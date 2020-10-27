@@ -30,7 +30,7 @@
 .flow-item{
     border-bottom: var(--medium-text-color) 1px solid;
     box-sizing: border-box;
-    color: #122742;
+    color: #151b17;
     height: auto;
     padding: 20px;
     width: 100%;  
@@ -38,6 +38,10 @@
 
 .flow-item p{
     letter-spacing: 0.4px;
+}
+
+.flow-item a{
+    color: #151b17;
 }
 
 .flow-item:nth-child(odd) {

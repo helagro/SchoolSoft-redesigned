@@ -49,7 +49,7 @@
     margin-right: 0;
 }
 #week_select_label .down{
-    transform: translateY(-2px);
+    margin-top:-1px;
 }
 
 
@@ -63,7 +63,7 @@
 #schedule_table{   
     display: grid;
     grid-auto-rows: 70px;
-    grid-template-columns: 70px auto;
+    grid-template-columns: 50px auto;
     height: auto;
 }
 .time_column {
@@ -75,6 +75,7 @@
 .time_column h4{
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-size: small;
     font-weight: 300;
     margin: 0 auto;
     padding: 0 3px;
@@ -95,12 +96,12 @@
 /* ANCHOR schedule item */
 .schedule_item{
     background-color: var(--blue);
-    column-gap: 20px;
+    column-gap: 12px;
     display: grid;
     grid-auto-columns: auto;
     grid-column: 2;
     justify-content: center;
-    overflow-y: auto;
+    overflow: auto;
     position: relative;
 }
 .schedule_item h3{
@@ -113,9 +114,21 @@
 }
 .schedule_item p{
     font-family: 'Courier New', Courier, monospace;
+    font-size: small;
     margin: 1px;
 }
 .small_schedule_item *{
     grid-row: 1;
     margin: auto !important;
+}
+
+@media (min-width: 580px){
+    #schedule_table{   
+        grid-template-columns: 70px auto;
+
+    }
+    #schedule_table *{
+        font-size: medium;
+    }
+
 }
