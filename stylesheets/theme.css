@@ -4,6 +4,7 @@
 	--main-links-transform-down: 30%;
 	--small-screen-links-horizontal-gap: 20px;
 	--big-component-height: 42px;
+	--row-gap: 16px;
 
 	--background1: #fff;
 	--blue: #aedceb;
@@ -29,7 +30,7 @@ body{
 section {
 	column-gap: 40px;
 	display: grid;
-	row-gap: 25px;
+	row-gap: var(--row-gap);
 	width: 100%;
 }
 

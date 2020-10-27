@@ -1,7 +1,7 @@
 section{
     box-sizing: border-box;
     display: grid;
-    margin: 60px auto 0 auto;
+    margin: calc(var(--nav-height) + 8px) auto 0 auto;
     max-width: 930px;
 }
 
