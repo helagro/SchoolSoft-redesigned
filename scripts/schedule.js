@@ -14,17 +14,17 @@ const rowHeight = 70
 //ANCHOR global variables
 const formatTime = (hour, min=0) => hour*60+min
 const lessons = [
-    {start:formatTime(8), stop:formatTime(11), name:"Mafs", room:"Varvsholmen", mClass:"nate19a", day:0},
+    {start:formatTime(8), stop:formatTime(11), name:"Matte", room:"Varvsholmen", mClass:"nate19a", day:0},
     {start:formatTime(12,20), stop:formatTime(14,40), name:"Teknik2", room:"Stensö", mClass:"nate18a", day:0},
     {start:formatTime(9,10), stop:formatTime(10,10), name:"Teknik1", room:"Varvsholmen", mClass:"nate19a", day:1},
-    {start:formatTime(10, 20), stop:formatTime(12), name:"Mafs", room:"Varvsholmen", mClass:"nate19a", day:1},
+    {start:formatTime(10, 20), stop:formatTime(12), name:"Matte", room:"Varvsholmen", mClass:"nate19a", day:1},
     {start:formatTime(13), stop:formatTime(13,20), name:"Mentorstid", room:"Varvsholmen", mClass:"nate19a", day:1},
     {start:formatTime(13, 25), stop:formatTime(15), name:"Spanska", room:"Varvsholmen", mClass:"nate19a", day:1},
     {start:formatTime(10, 30), stop:formatTime(12), name:"Teknik5", room:"Varvsholmen", mClass:"nate19a", day:2},
     {start:formatTime(12,1), stop:formatTime(12,40), name:"Teknik7", room:"Varvsholmen", mClass:"nate19a", day:2},
     {start:formatTime(14), stop:formatTime(14,41), name:"Tyska", room:"Varvsholmen", mClass:"nate19a", day:2},
     {start:formatTime(9,10), stop:formatTime(10,10), name:"Teknik1", room:"Varvsholmen", mClass:"nate19a", day:4},
-    {start:formatTime(12,20), stop:formatTime(14,40), name:"Mafs", room:"Varvsholmen", mClass:"nate19a", day:4}
+    {start:formatTime(12,20), stop:formatTime(14,40), name:"Matte", room:"Varvsholmen", mClass:"nate19a", day:4}
 ]
 const schoolCloseTime = 18
 const noMoreLessons = -1
