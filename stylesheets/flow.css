@@ -1,6 +1,6 @@
 .flow{
     background-color: var(--background1);
-    border: var(--big-text-color) 1.5px solid;
+    border: var(--definer-color) 1px solid;
     display: grid;
     grid-template-rows: var(--big-component-height) auto;
     height: 700px;
@@ -28,7 +28,7 @@
 }
 
 .flow-item{
-    border-bottom: var(--medium-text-color) 1px solid;
+    border-bottom: var(--medium-text-color) .5px solid;
     box-sizing: border-box;
     color: #151b17;
     height: auto;

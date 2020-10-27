@@ -1,6 +1,6 @@
 .schedule{
     background-color: white;
-    border: 1px #aaa solid;
+    border: 1px var(--definer-color) solid;
     height: auto;
     min-height: 0 !important;
 }
@@ -16,9 +16,16 @@
 }
 .days_links label{
     align-items:center;
-    border: 1px gray solid;
+    border: .5px var(--definer-color) solid;
+    border-top: none;
     display: flex;
     justify-content: center;
+}
+.days_links label:first-child{
+    border-left: none;
+}
+.days_links label:last-child{
+    border-right: none;
 }
 .day_radio{
     display: none;
@@ -67,7 +74,7 @@
     height: auto;
 }
 .time_column {
-    border: 1px grey solid;
+    border: 1px var(--definer-color) solid;
     border-style: solid solid none none;
     grid-column: 1;
     text-align: center;
@@ -83,7 +90,7 @@
     width: min-content;
 }
 .schedule_divider{
-    border-bottom: 1px grey solid;
+    border-bottom: 1px var(--definer-color) solid;
     grid-column: 2;
 }
 .empty_schedule{

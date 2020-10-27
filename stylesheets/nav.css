@@ -65,7 +65,7 @@ nav {
 /*ANCHOR dropdowns*/
 .dropdown{
 	background-color: var(--weak-green);
-	border: 1px solid var(--medium-text-color);
+	border: 1px solid var(--definer-color);
 	box-sizing: border-box;
 	column-gap: 9px;
 	display: none;
@@ -132,7 +132,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 3;
 }
 
 @media only screen and (min-height: 900px) {

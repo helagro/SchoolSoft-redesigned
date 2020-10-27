@@ -10,7 +10,8 @@
 	--blue: #aedceb;
 	--green: #c1f7ca;
 	--weak-green: #fbfdfb;
-	--shadow-color:  #9b9b9b;
+	--shadow-color:  #999898;
+	--definer-color: #9e9e9e;
 
 	--big-text-color: #656568;
 	--medium-text-color: #4b4b4d;
@@ -53,7 +54,7 @@ p {
 
 /* ANCHOR general classes */
 .arrow {
-	border: solid var(--medium-text-color);
+	border: solid var(--definer-color);
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;
