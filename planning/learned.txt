@@ -1,0 +1,1 @@
+name color-variables describing color instead of usages because usages might change and me many

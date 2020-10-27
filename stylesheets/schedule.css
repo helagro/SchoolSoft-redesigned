@@ -94,7 +94,7 @@
 
 /* ANCHOR schedule item */
 .schedule_item{
-    background-color: var(--darkest-background);
+    background-color: var(--blue);
     column-gap: 20px;
     display: grid;
     grid-auto-columns: auto;

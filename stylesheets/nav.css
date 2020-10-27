@@ -64,7 +64,7 @@ nav {
 
 /*ANCHOR dropdowns*/
 .dropdown{
-	background-color: var(--dark-background);
+	background-color: var(--weak-green);
 	border: 1px solid var(--medium-text-color);
 	box-sizing: border-box;
 	column-gap: 9px;

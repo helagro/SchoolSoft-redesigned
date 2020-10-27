@@ -41,5 +41,5 @@
 }
 
 .flow-item:nth-child(odd) {
-    background-color: #f7fafd;   
+    background-color: var(--green);   
 }
