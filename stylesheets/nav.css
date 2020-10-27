@@ -157,7 +157,7 @@ nav {
 		row-gap: 3px;
 	}
 }
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 910px) {
 	:root{
 		--main-links-transform-down: 0;
 		--small-screen-links-horizontal-gap: 0px;
