@@ -5,6 +5,7 @@
 	--small-screen-links-horizontal-gap: 20px;
 	--big-component-height: 42px;
 	--row-gap: 16px;
+	--small-nav-threashold: 920px;
 
 	--background1: #fff;
 	--blue: #aedceb;
@@ -19,26 +20,55 @@
 
 
 body{
+	background-attachment: fixed;
 	background-image: url(../img/dotts.svg);
 	background-repeat: repeat;
 	background-size: 25px;
-	background-attachment: fixed;
 
 	margin: 0;
 	width: 100%;
 }
 
 section {
+	box-sizing: border-box;
 	column-gap: 40px;
 	display: grid;
+    margin: calc(var(--nav-height) + 8px) auto 0 auto;
+    max-width: 930px;
 	row-gap: var(--row-gap);
 	width: 100%;
 }
 
 section > div{
-	box-shadow: 0px 3px 4px var(--shadow-color);
+	box-shadow: 0px 2px 4px var(--shadow-color);
 	box-sizing: border-box;
 }
+
+
+@media(min-width: 1200px){
+    section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 85vh;
+        margin-top: 70px !important;
+        max-width: 2500px;
+        padding: 0 30px;
+    }
+
+    section > div{
+        box-shadow: 2px 2px 4px var(--shadow-color);
+    }
+
+    .flow{
+        height: 100% !important;
+    }
+
+    .schedule{
+        margin-bottom: auto;
+        overflow: hidden;
+    }
+}
+
+
 
 
 /* ANCHOR Element types */
@@ -54,7 +84,7 @@ p {
 
 /* ANCHOR general classes */
 .arrow {
-	border: solid var(--definer-color);
+	border: solid var(--medium-text-color);
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;

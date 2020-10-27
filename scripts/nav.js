@@ -1,7 +1,8 @@
 const navCheckbox = document.getElementById('hidden_menu_checkbox')
 const dimmer = document.getElementById('dimmer')
 
-const smallScreenNavThreashold = 840
+const smallScreenNavThreashold = 920
+
 
 var lastWindowWidth = -1
 var lastDropdown
