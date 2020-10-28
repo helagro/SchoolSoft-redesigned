@@ -145,16 +145,17 @@ nav {
 }
 @media only screen and (max-width: 500px) {
 	.links {
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 1fr 1fr;
 	}
 	.dropdown{
 		grid-auto-flow: unset;
+		grid-auto-rows: min-content;
 		grid-template-columns: auto;
-		grid-template-rows: none;
+		grid-template-rows: unset;
 		height: 100%;
 		overflow: scroll;
 		padding: 4px;
-		row-gap: 3px;
+		row-gap: 6px;
 	}
 }
 @media only screen and (min-width: 920px) {  /*min-width changes must be duplicated in nav.js*/
