@@ -80,7 +80,6 @@ function replaceDropdown(newDropdown, clickedLink){
     lastDropdown = newDropdown
     return true
 }
-
 function userClickedSameLinkAgain(newDropdown, lastDropdown){
     return newDropdown == lastDropdown
 }
@@ -88,13 +87,14 @@ function userClickedSameLinkAgain(newDropdown, lastDropdown){
 
 //Remove dropdown
 function removeOldDropdown(dropdown){
-    if(lastDropdown == undefined)
+    if(dropdown == undefined || dropdown.style.display == "none")
         return 
 
     dropdown.style.display = "none"
     removeDropdownHeaderLink(dropdown)
 }
 function removeDropdownHeaderLink(dropdown){
+    console.log(dropdown.childNodes[0].innerHTML)
     dropdown.removeChild(dropdown.childNodes[0])
 }
 
