@@ -102,51 +102,63 @@
 
 /* ANCHOR schedule item */
 .schedule_item{
+    align-items: baseline;
     background-color: var(--blue);
-    column-gap: 12px;
+    column-gap: 10px;
     display: grid;
-    grid-auto-columns: auto;
+    grid-auto-columns: auto min-content min-content auto;
     grid-column: 2;
-    justify-content: center;
+    grid-template-rows: 100%;
     overflow: auto;
     position: relative;
 }
-.schedule_item h3{
-    align-self: flex-end;
-    display: flex;
-    grid-column: 1 / span 3;
-    justify-content: center;
-    margin: 0;
-    text-align: center;
+
+
+
+.schedule_item *{
+    grid-row: 1;
+    margin: auto 0;
 }
+
 .schedule_item p{
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
-    margin: 1px;
+}
+.schedule_item *:first-child{
+    margin-left: auto;
 }
 
-.small_schedule_item{
-    display: flex;
-    justify-content: initial; /*justify-content: center; doesn't work well with overflow scroll*/
-    text-align: center;
+.two_row_schedule_item{
+    grid-template-rows: auto auto;
+    grid-auto-columns: auto min-content auto;
 }
-.small_schedule_item *{
-    margin: auto 0 !important;
+
+.two_row_schedule_item h3{
+    grid-column: 2;
+    margin: auto 0 0 0 !important;
 }
-.small_schedule_item *:first-child{
+.two_row_schedule_item p{
+    grid-row: 2;
+    margin-top: 0 !important;
+}
+.two_row_schedule_item p:first-of-type{
     margin-left: auto !important;
 }
-.small_schedule_item *:last-child{
+.two_row_schedule_item p:last-child{
+    float: left;
     margin-right: auto !important;
 }
+
 
 @media (min-width: 580px){
     #schedule_table{   
         grid-template-columns: 70px auto;
 
     }
-    #schedule_table *{
+    .time_column h4{
         font-size: medium;
     }
-
+    .schedule_item p{
+        font-size: medium !important;
+    }
 }

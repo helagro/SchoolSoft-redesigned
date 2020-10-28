@@ -21,7 +21,7 @@ const lessons = [
     {start:formatTime(13), stop:formatTime(13,20), name:"Mentorstid", room:"Varvsholmen", mClass:"nate19a", day:1},
     {start:formatTime(13, 25), stop:formatTime(15), name:"Spanska", room:"Varvsholmen", mClass:"nate19a", day:1},
     {start:formatTime(10, 30), stop:formatTime(12), name:"Teknik5", room:"Varvsholmen", mClass:"nate19a", day:2},
-    {start:formatTime(12,1), stop:formatTime(12,40), name:"Teknik7", room:"Varvsholmen", mClass:"nate19a", day:2},
+    {start:formatTime(12,1), stop:formatTime(12,30), name:"Teknik7", room:"Varvsholmen", mClass:"nate19a", day:2},
     {start:formatTime(14), stop:formatTime(14,41), name:"Tyska", room:"Varvsholmen", mClass:"nate19a", day:2},
     {start:formatTime(9,10), stop:formatTime(10,10), name:"Teknik1", room:"Varvsholmen", mClass:"nate19a", day:4},
     {start:formatTime(12,20), stop:formatTime(14,40), name:"Matte", room:"Varvsholmen", mClass:"nate19a", day:4}
@@ -201,7 +201,7 @@ function addLessonElement(lesson, rowIndex){
 
     const startTimeStr = `${startHour}:${addLeadingZero(startMin)}`
     const stopTimeStr = `${stopHour}:${addLeadingZero(stopMin)}`
-    const smallScheduleItem = durationInMinutes < 40 ? "small_schedule_item" : ""
+    const smallScheduleItem = durationInMinutes > 30 ? "two_row_schedule_item" : ""
 
     addToScheduleElement(`
         <div class="schedule_item ${smallScheduleItem}" style="grid-row: ${rowIndex} / span ${span}; margin-top:${startMargin}px; height: ${height}px">
