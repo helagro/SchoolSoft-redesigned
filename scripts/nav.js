@@ -94,7 +94,6 @@ function removeOldDropdown(dropdown){
     removeDropdownHeaderLink(dropdown)
 }
 function removeDropdownHeaderLink(dropdown){
-    console.log(dropdown.childNodes[0].innerHTML)
     dropdown.removeChild(dropdown.childNodes[0])
 }
 

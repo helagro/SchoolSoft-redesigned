@@ -148,7 +148,6 @@ nav {
 		grid-template-columns: 1fr 1fr;
 	}
 	.dropdown{
-		grid-auto-flow: unset;
 		grid-auto-rows: min-content;
 		grid-template-columns: auto;
 		grid-template-rows: unset;

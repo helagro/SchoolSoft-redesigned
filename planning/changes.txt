@@ -1,7 +1,20 @@
 //TODO
     kunskapskrav
+        aktuella
+            projektplan
+            compartmentalize
+            bild och media
+                optimera
+            domscript
+            ramverk
+            tester  
+                inkl menuella
+            dokumentation
+                resonera om avvikelser
+                lagar
+                eetik & integritet
+                big words
     rem unneccecary css: https://www.keycdn.com/blog/remove-unused-css
-    Uncaught ReferenceError: styleCurrentLink is not defined - sometimes
 
 
 navigation
