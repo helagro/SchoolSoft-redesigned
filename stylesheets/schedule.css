@@ -70,7 +70,7 @@
 #schedule_table{   
     display: grid;
     grid-auto-rows: 70px;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 50px 1fr;
     height: auto;
 }
 .time_column {
@@ -110,7 +110,6 @@
     justify-content: center;
     overflow: auto;
     position: relative;
-    scroll-margin: 100px;
 }
 .schedule_item h3{
     align-self: flex-end;
@@ -125,9 +124,20 @@
     font-size: small;
     margin: 1px;
 }
+
+.small_schedule_item{
+    display: flex;
+    justify-content: initial; /*justify-content: center; doesn't work well with overflow scroll*/
+    text-align: center;
+}
 .small_schedule_item *{
-    grid-row: 1;
-    margin: auto !important;
+    margin: auto 0 !important;
+}
+.small_schedule_item *:first-child{
+    margin-left: auto !important;
+}
+.small_schedule_item *:last-child{
+    margin-right: auto !important;
 }
 
 @media (min-width: 580px){
