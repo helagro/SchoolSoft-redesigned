@@ -30,7 +30,6 @@
 .flow-item{
     border-bottom: var(--medium-text-color) .5px solid;
     box-sizing: border-box;
-    color: #151b17;
     height: auto;
     padding: 20px;
     width: 100%;  

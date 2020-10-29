@@ -6,15 +6,23 @@
                     projektplan
                 compartmentalize
                 bild och media
-                    optimera
+                optimera
                 domscript
-                    ramverk
                     tester  
                         inkl menuella
                     dokumentation
                         resonera om avvikelser
+                            smallest nav
+                            tog ingen footer
+                            inte så mycket linkelser
+                                fanns inte mycket jag gillade på den gammla
+                            day links
+                            time columns
                         lagar
+                            only icon
                         eetik & integritet
+                            schoolsoft har en del med auto outlog etc - överdrivet
+                            not displaying personal info everywhere
                         big words
     rem unneccecary css: https://www.keycdn.com/blog/remove-unused-css
 

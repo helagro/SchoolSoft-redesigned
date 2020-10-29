@@ -14,7 +14,7 @@
 	--shadow-color:  #999898;
 	--definer-color: #9e9e9e;
 
-	--big-text-color: #656568;
+	--big-text-color: #585858;
 	--medium-text-color: #4b4b4d;
 }
 
@@ -85,7 +85,7 @@ p {
 /* ANCHOR general classes */
 .arrow {
 	border: solid var(--medium-text-color);
-	border-width: 0 3px 3px 0;
+	border-width: 0 2px 2px 0;
 	display: inline-block;
 	padding: 3px;
   }
