@@ -39,7 +39,6 @@ function onNavTouch(event){
     const target = event.target || event.srcElement;
     const id = target.id
     const dropdown = getRelevantDropdown(id)
-    console.log(id)
 
     const replaced = replaceDropdown(dropdown, target)
     if(replaced)
