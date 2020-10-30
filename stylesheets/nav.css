@@ -50,7 +50,7 @@ nav {
 }
 .links > a {
 	color: var(--big-text-color);
-	font-size: larger;
+	font-size: 18px;
 	font-weight: 200;
 	padding-right: var(--small-screen-links-horizontal-gap);
 	text-align: right;
@@ -82,7 +82,7 @@ nav {
 }
 .dropdown > a {
 	color: var(--medium-text-color);
-	font-size: medium;
+	font-size: 16px;
 }
 .dropdown_main_link{
 	grid-column: 1 / -1;
@@ -158,8 +158,8 @@ nav {
 		row-gap: 6px;
 		text-align: left;
 	}
-	.dropdown a{
-		font-size: large;
+	.dropdown > a{
+		font-size: 18px;
 	}
 }
 @media only screen and (min-width: 920px) {  /*min-width changes must be duplicated in nav.js*/
