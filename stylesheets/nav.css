@@ -57,8 +57,7 @@ nav {
 	text-decoration: none;
 }
 .links a:hover{
-	color: #888;
-	text-decoration: underline #fff;
+	text-decoration: underline;
 }
 
 
@@ -83,6 +82,7 @@ nav {
 .dropdown > a {
 	color: var(--medium-text-color);
 	font-size: 16px;
+	text-decoration: none;
 }
 .dropdown_main_link{
 	grid-column: 1 / -1;
