@@ -10,7 +10,7 @@
 
 .flow h2{
     align-items: center;
-    box-shadow: 0 4px 2px -2px var(--shadow-color);
+    box-shadow: 0 1.6px 3px var(--shadow-color);
     box-sizing: border-box;
     display: flex;
     height: 100%;
