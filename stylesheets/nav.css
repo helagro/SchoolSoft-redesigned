@@ -1,6 +1,6 @@
 nav {
 	background-color: var(--background1);
-	box-shadow: 0 3px 3px var(--shadow-color);
+	box-shadow: 0 2px 3px var(--shadow-color);
 	display: grid;
 	font-family: 'Raleway', sans-serif;
 	grid-template-columns: 70px 70px;
@@ -35,7 +35,7 @@ nav {
 .links {
 	align-items: stretch;
 	background-color: var(--background1);
-	box-shadow: 0 3px 3px var(--shadow-color);
+	box-shadow: 0 2px 3px var(--shadow-color);
 	display: grid;
 	grid-template-columns: 40% 60%;
 	grid-template-rows: auto auto;
